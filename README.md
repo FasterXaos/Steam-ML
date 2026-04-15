@@ -15,7 +15,7 @@ Steam-ML/
 ├── notebooks/
 │   ├── dataAnalysis.ipynb
 │   └── clustering.ipynb
-├── .env.example
+├── .env                           # нудно создать
 ├── requirements.txt
 └── README.md
 ```
