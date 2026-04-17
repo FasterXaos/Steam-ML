@@ -13,9 +13,12 @@ Steam-ML/
 │   ├── steamCrawlQueue.json       # очередь для краулинга SteamID
 │   └── simpleStatistics.txt       # простая статистика после краулинга
 ├── notebooks/
+│   ├── clustering.ipynb
 │   ├── dataAnalysis.ipynb
-│   └── clustering.ipynb
-├── .env                           # нудно создать
+│   ├── main.ipynb
+│   ├── recommendationSystem.ipynb
+│   └── steamDataCollector.ipynb
+├── .env                           # нужно создать
 ├── requirements.txt
 └── README.md
 ```
