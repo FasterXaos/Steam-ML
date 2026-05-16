@@ -43,8 +43,8 @@ pip install -r requirements.txt
    STEAM_ID=ваш_id_здесь
    ```
 
-- Ключ можно получить на [Steam Web API](https://steamcommunity.com/dev/apikey)
-- SteamID64 можно узнать на [SteamID I/O](https://steamid.io/)
+Ключ можно получить бесплатно на [Steam Web API](https://steamcommunity.com/dev/apikey).  
+ID можно получить по ссылке профиля на [SteamID I/O](https://steamid.io/), нужен `steamID64`.
 
 ## Собираемые данные
 
