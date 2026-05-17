@@ -7,24 +7,22 @@
 
 ```
 Steam-ML/
-├── data/                              # собранные датасеты
+├── data/                              # собранные данные
 │   ├── steamUsersDataset.json         # профили пользователей + их игры
 │   ├── steamGamesDataset.json         # информация об играх (отзывы, owners, tags и т.д.)
 │   ├── friendsGraph.json              # граф дружбы между пользователями
-│   ├── linkPredictionDataset.csv      # обучающая выборка для Link Prediction
 │   ├── steamCrawlQueue.json           # очередь для краулинга SteamID
 │   └── simpleStatistics.txt           # базовая статистика после краулинга
 ├── notebooks/
-│   ├── steamDataCollector.ipynb       # сбор данных пользователей и игр
-│   ├── dataAnalysis.ipynb             # анализ и визуализация данных
 │   ├── clustering.ipynb               # кластеризация пользователей
-│   ├── recommendationSystem.ipynb     # рекомендательная система игр
+│   ├── dataAnalysis.ipynb             # анализ и визуализация данных
 │   ├── friendsGraphAnalysis.ipynb     # сбор графа друзей + Community Detection + 3D-визуализация
-│   ├── linkPrediction.ipynb           # Link Prediction: предсказание дружбы
-│   └── main.ipynb                     # общий пайплайн
-├── .env                               # API ключи (нужно создать)
-├── requirements.txt
-└── README.md
+│   ├── linkPrediction.ipynb           # предсказание дружбы
+│   ├── recommendationSystem.ipynb     # рекомендательная система игр
+│   └── steamDataCollector.ipynb       # сбор данных пользователей и игр
+├── .env                               # (нужно создать)
+├── README.md
+└── requirements.txt
 ```
 
 ## Установка
@@ -48,9 +46,8 @@ ID можно получить по ссылке профиля на [SteamID I/
 
 ## Собираемые данные
 
-- **steamUsersDataset.json** — информация о пользователях (steamId, personaname, ownedGames, playtimeForever, loccountrycode, timecreated и др.).
-- **steamGamesDataset.json** — информация об играх (название, отзывы, owners, жанр, tags, languages, averageForever и т.д.).
-- **steamCrawlQueue.json** — очередь SteamID для дальнейшего краулинга.
-- **simpleStatistics.txt** — общая статистика по собранным данным.
 - **friendsGraph.json** — граф дружбы: {steamId: [список друзей в датасете]}
-- **linkPredictionDataset.csv** — 110 000 примеров с 11 признаками для Link Prediction
+- **simpleStatistics.txt** — общая статистика по собранным данным.
+- **steamCrawlQueue.json** — очередь SteamID для дальнейшего краулинга.
+- **steamGamesDataset.json** — информация об играх (название, отзывы, owners, жанр, tags, languages, averageForever и т.д.).
+- **steamUsersDataset.json** — информация о пользователях (steamId, personaname, ownedGames, playtimeForever, loccountrycode, timecreated и др.).
