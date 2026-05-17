@@ -1,4 +1,11 @@
 python-dotenv
+requests
+numpy
+pandas
 matplotlib
-requests 
-sns
+seaborn
+scikit-learn
+networkx
+python-louvain
+plotly
+tqdm
